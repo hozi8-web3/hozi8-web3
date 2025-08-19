@@ -1,41 +1,14 @@
 <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Enhanced Gradients -->
-    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Simple gradient for text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
-      <stop offset="25%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:1" />
-      <stop offset="75%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#00ff00;stop-opacity:1" />
     </linearGradient>
     
-    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0.9" />
-      <stop offset="25%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="75%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#00ff00;stop-opacity:0.9" />
-    </linearGradient>
-    
-    <radialGradient id="innerGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0.3" />
-      <stop offset="100%" style="stop-color:#00ff00;stop-opacity:0" />
-    </radialGradient>
-    
-    <!-- Enhanced Filters -->
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge> 
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00ff00" flood-opacity="0.8"/>
-    </filter>
-    
-    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- Simple glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge> 
         <feMergeNode in="coloredBlur"/>
@@ -44,152 +17,80 @@
     </filter>
   </defs>
   
-  <!-- Background Glow -->
-  <circle cx="60" cy="60" r="55" fill="url(#innerGlow)" opacity="0.4">
-    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  <!-- Simple circular border -->
+  <circle cx="60" cy="60" r="55" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
   </circle>
   
-  <!-- Enhanced HOZI Text -->
+  <!-- HOZI Text - Simple and Clear -->
   <g filter="url(#glow)">
-    <!-- H - Enhanced -->
-    <path d="M8,20 L8,80 M8,50 L28,50 M28,20 L28,80" 
-          stroke="url(#mainGradient)" 
-          stroke-width="5" 
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-width" values="5;6;5" dur="2s" repeatCount="indefinite"/>
-    </path>
-    
-    <!-- O - Enhanced -->
-    <path d="M35,20 Q35,10 45,10 T55,20 L55,80 Q55,90 45,90 T35,80 Z" 
-          stroke="url(#mainGradient)" 
-          stroke-width="5" 
-          fill="none">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-width" values="5;6;5" dur="2.5s" repeatCount="indefinite"/>
-    </path>
-    
-    <!-- Z - Enhanced -->
-    <path d="M62,20 L82,20 M82,20 L62,80 M62,80 L82,80" 
-          stroke="url(#mainGradient)" 
-          stroke-width="5" 
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-width" values="5;6;5" dur="1.8s" repeatCount="indefinite"/>
-    </path>
-    
-    <!-- I - Enhanced -->
-    <path d="M89,20 L89,80" 
-          stroke="url(#mainGradient)" 
+    <!-- H - Simple and clear -->
+    <path d="M12,20 L12,80 M12,50 L28,50 M28,20 L28,80" 
+          stroke="url(#textGradient)" 
           stroke-width="5" 
           fill="none"
           stroke-linecap="round">
-      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="1.8s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-width" values="5;6;5" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- O - Simple and clear -->
+    <path d="M38,20 Q38,12 48,12 T58,20 L58,80 Q58,88 48,88 T38,80 Z" 
+          stroke="url(#textGradient)" 
+          stroke-width="5" 
+          fill="none">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Z - Simple and clear -->
+    <path d="M68,20 L88,20 M88,20 L68,80 M68,80 L88,80" 
+          stroke="url(#textGradient)" 
+          stroke-width="5" 
+          fill="none"
+          stroke-linecap="round">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- I - Simple and clear -->
+    <path d="M98,20 L98,80" 
+          stroke="url(#textGradient)" 
+          stroke-width="5" 
+          fill="none"
+          stroke-linecap="round">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0;0,100" dur="1.5s" repeatCount="indefinite"/>
     </path>
   </g>
   
-  <!-- Enhanced Animated Border -->
-  <rect x="3" y="3" width="114" height="114" 
-        rx="20" 
-        stroke="url(#glowGradient)" 
-        stroke-width="4" 
-        fill="none"
-        opacity="0.8"
-        filter="url(#neon)">
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-width" values="4;5;4" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  
-  <!-- Enhanced Floating Particles -->
-  <g opacity="0.9">
-    <circle cx="20" cy="25" r="3" fill="#00ff00" filter="url(#shadow)">
-      <animate attributeName="cy" values="25;15;25" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="r" values="3;4;3" dur="1.5s" repeatCount="indefinite"/>
+  <!-- Simple corner dots -->
+  <g>
+    <circle cx="15" cy="15" r="3" fill="#00ff00">
+      <animate attributeName="r" values="3;4;3" dur="2s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="100" cy="25" r="3" fill="#00ffff" filter="url(#shadow)">
-      <animate attributeName="cy" values="25;15;25" dur="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="2.5s" repeatCount="indefinite"/>
+    <circle cx="105" cy="15" r="3" fill="#00ffff">
+      <animate attributeName="r" values="3;4;3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="15" cy="105" r="3" fill="#ff00ff">
       <animate attributeName="r" values="3;4;3" dur="1.8s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="60" cy="95" r="3" fill="#ff00ff" filter="url(#shadow)">
-      <animate attributeName="cx" values="60;70;60" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+    <circle cx="105" cy="105" r="3" fill="#ffff00">
       <animate attributeName="r" values="3;4;3" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    
-    <!-- Additional particles -->
-    <circle cx="40" cy="35" r="2" fill="#ffff00" filter="url(#shadow)">
-      <animate attributeName="cy" values="35;25;35" dur="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.8s" repeatCount="indefinite"/>
-    </circle>
-    
-    <circle cx="80" cy="35" r="2" fill="#00ff00" filter="url(#shadow)">
-      <animate attributeName="cy" values="35;25;35" dur="2.3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.3s" repeatCount="indefinite"/>
-    </circle>
   </g>
   
-  <!-- Enhanced Corner Accents -->
-  <g filter="url(#shadow)">
-    <circle cx="18" cy="18" r="4" fill="#00ff00">
-      <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+  <!-- Simple floating particles -->
+  <g opacity="0.7">
+    <circle cx="30" cy="30" r="2" fill="#00ff00">
+      <animate attributeName="cy" values="30;20;30" dur="3s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="102" cy="18" r="4" fill="#00ffff">
-      <animate attributeName="r" values="4;6;4" dur="1.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.8s" repeatCount="indefinite"/>
+    <circle cx="90" cy="30" r="2" fill="#00ffff">
+      <animate attributeName="cy" values="30;20;30" dur="2.8s" repeatCount="indefinite"/>
     </circle>
     
-    <circle cx="18" cy="102" r="4" fill="#ff00ff">
-      <animate attributeName="r" values="4;6;4" dur="2.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    
-    <circle cx="102" cy="102" r="4" fill="#ffff00">
-      <animate attributeName="r" values="4;6;4" dur="1.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.6s" repeatCount="indefinite"/>
+    <circle cx="60" cy="90" r="2" fill="#ff00ff">
+      <animate attributeName="cx" values="60;70;60" dur="3.5s" repeatCount="indefinite"/>
     </circle>
   </g>
-  
-  <!-- Enhanced Energy Waves -->
-  <g opacity="0.6" filter="url(#neon)">
-    <path d="M0,60 Q30,40 60,60 T120,60" 
-          stroke="#00ff00" 
-          stroke-width="2" 
-          fill="none">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-width" values="2;3;2" dur="4s" repeatCount="indefinite"/>
-    </path>
-    
-    <path d="M0,60 Q30,80 60,60 T120,60" 
-          stroke="#00ffff" 
-          stroke-width="2" 
-          fill="none">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-width" values="2;3;2" dur="3.5s" repeatCount="indefinite"/>
-    </path>
-    
-    <!-- Additional wave -->
-    <path d="M0,65 Q30,45 60,65 T120,65" 
-          stroke="#ff00ff" 
-          stroke-width="1.5" 
-          fill="none">
-      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  
-  <!-- Center Glow Effect -->
-  <circle cx="60" cy="60" r="30" fill="none" stroke="url(#glowGradient)" stroke-width="1" opacity="0.3">
-    <animate attributeName="r" values="30;35;30" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
-  </circle>
 </svg>

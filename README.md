@@ -66,7 +66,7 @@
 
   <!-- Cool Divider -->
   <div align="center" class="divider-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider"/>
   </div>
 
   <!-- Web3 & DApp Development Section -->
@@ -226,7 +226,7 @@
 
   <!-- Cool Divider -->
   <div align="center" class="divider-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider"/>
   </div>
 
   <!-- Footer -->
@@ -508,6 +508,17 @@
     padding: 10px 0;
     background: rgba(0, 255, 0, 0.02);
     border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .divider-container img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
   }
 
   /* Footer Container - Enhanced */
