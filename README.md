@@ -1,5 +1,15 @@
 <div align="center">
   
+  <!-- Muslim Greeting -->
+  <div align="center" class="greeting-container">
+    <h1 class="greeting-text">Assalamu alaikum wa rahmatullahi wa barakatuh ✨</h1>
+  </div>
+
+  <!-- Animated Logo -->
+  <div align="center" class="logo-container">
+    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/hozi.svg" alt="HOZI Logo" class="animated-logo" />
+  </div>
+  
   <!-- Animated Typing Header with Working Animation -->
   <div align="center" class="floating-header">
     <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+there+%F0%9F%91%8B+I'm+HOZAIFA+ALI;aka+HOZI+%F0%9F%92%BB;Web3+Developer+%7C+Backend+Wizard+%7C+AI+Enthusiast;Discord+Moderator+%26+Bot+Developer+%F0%9F%A4%96;Smart+Contract+Developer+%7C+DApp+Architect;Python+Script+Developer+%F0%9F%8D%8D;Always+building+cool+private+projects+%F0%9F%9A%80&center=true&size=30&width=800&height=150&color=00ff00&font=bold&vCenter=true&pause=2000&repeat=true" alt="Typing SVG" />
@@ -218,8 +228,11 @@
 
   <!-- Footer -->
   <div align="center" class="footer-container floating-element">
-    <p>
+    <p class="footer-text">
       <em>Thanks for visiting! Feel free to reach out if you want to collaborate on something awesome! 🚀</em>
+    </p>
+    <p class="footer-subtext">
+      <em>May Allah bless your coding journey! ✨</em>
     </p>
   </div>
 
@@ -227,6 +240,9 @@
 
 <!-- Enhanced CSS for Multiple Animations -->
 <style>
+  /* Import Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
   /* Gradient Animation */
   @keyframes gradient {
     0% { background-position: 0% 50%; }
@@ -265,6 +281,55 @@
     50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; }
   }
 
+  /* Logo Animation */
+  @keyframes logoFloat {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-15px) scale(1.05); }
+  }
+
+  /* Greeting Container */
+  .greeting-container {
+    margin: 30px 0 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.1), rgba(0, 255, 255, 0.1));
+    border-radius: 20px;
+    border: 2px solid rgba(0, 255, 0, 0.3);
+  }
+
+  .greeting-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    font-weight: 600;
+    background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #ffff00, #00ff00);
+    background-size: 300% 300%;
+    animation: gradient 4s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  /* Logo Container */
+  .logo-container {
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  .animated-logo {
+    width: 120px;
+    height: 120px;
+    animation: logoFloat 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.5));
+    transition: all 0.3s ease;
+  }
+
+  .animated-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 0 30px rgba(0, 255, 0, 0.8));
+  }
+
   /* Gradient Text Class */
   .gradient-text {
     background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #00ff00);
@@ -277,6 +342,7 @@
     font-weight: bold;
     margin: 20px 0;
     text-align: center;
+    font-family: 'Inter', sans-serif;
   }
 
   /* Floating Elements */
@@ -320,6 +386,7 @@
     margin: 20px 0;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
   }
 
   .content-box:hover {
@@ -383,21 +450,46 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+    font-family: 'Inter', sans-serif;
   }
 
   /* Divider Container */
   .divider-container {
-    margin: 30px 0;
+    margin: 40px 0;
     animation: floating 2s ease-in-out infinite;
+    padding: 10px 0;
+    background: rgba(0, 255, 0, 0.02);
+    border-radius: 10px;
   }
 
-  /* Footer Container */
+  /* Footer Container - Enhanced */
   .footer-container {
     margin-top: 30px;
-    padding: 20px;
-    background: rgba(0, 255, 0, 0.05);
-    border-radius: 15px;
-    border: 1px solid rgba(0, 255, 0, 0.3);
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.08), rgba(0, 255, 255, 0.08));
+    border-radius: 20px;
+    border: 2px solid rgba(0, 255, 0, 0.4);
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.2);
+    backdrop-filter: blur(15px);
+  }
+
+  .footer-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+
+  .footer-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #00ff00;
+    margin: 0;
+    opacity: 0.9;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
   }
 
   /* Hover Effects */
@@ -411,5 +503,16 @@
 
   .pulsing-icon:hover {
     animation-duration: 0.5s;
+  }
+
+  /* General Text Styling */
+  p, strong, em {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+
+  strong {
+    color: #00ff00;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
   }
 </style>
