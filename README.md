@@ -7,7 +7,10 @@
 
   <!-- Animated Logo -->
   <div align="center" class="logo-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/Hozi.svg" alt="HOZI Logo" class="animated-logo" />
+    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/Hozi.svg" alt="HOZI Logo" class="animated-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+    <div class="logo-placeholder" style="display: none;">
+      <span class="placeholder-text">HOZI</span>
+    </div>
   </div>
   
   <!-- Animated Typing Header with Working Animation -->
@@ -283,8 +286,18 @@
 
   /* Logo Animation */
   @keyframes logoFloat {
-    0%, 100% { transform: translateY(0px) scale(1); }
-    50% { transform: translateY(-15px) scale(1.05); }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes logoRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes logoGlow {
+    0% { filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.5)) brightness(1); }
+    100% { filter: drop-shadow(0 0 30px rgba(0, 255, 0, 0.8)) brightness(1.1); }
   }
 
   /* Greeting Container */
@@ -318,16 +331,51 @@
   }
 
   .animated-logo {
-    width: 120px;
-    height: 120px;
-    animation: logoFloat 4s ease-in-out infinite;
+    width: 80px;
+    height: 80px;
+    animation: logoFloat 4s ease-in-out infinite, logoRotate 8s linear infinite, logoGlow 3s ease-in-out infinite alternate;
     filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.5));
     transition: all 0.3s ease;
+    border-radius: 15px;
   }
 
   .animated-logo:hover {
-    transform: scale(1.1) rotate(5deg);
-    filter: drop-shadow(0 0 30px rgba(0, 255, 0, 0.8));
+    transform: scale(1.2) rotate(10deg);
+    filter: drop-shadow(0 0 40px rgba(0, 255, 0, 0.8));
+    animation-play-state: paused;
+  }
+
+  /* Logo Placeholder */
+  .logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 255, 0.2));
+    border: 3px solid rgba(0, 255, 0, 0.6);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: logoFloat 4s ease-in-out infinite, logoGlow 3s ease-in-out infinite alternate;
+    transition: all 0.3s ease;
+  }
+
+  .logo-placeholder:hover {
+    transform: scale(1.2) rotate(10deg);
+    border-color: rgba(0, 255, 0, 0.9);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+  }
+
+  .placeholder-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #00ff00);
+    background-size: 300% 300%;
+    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
   }
 
   /* Gradient Text Class */
