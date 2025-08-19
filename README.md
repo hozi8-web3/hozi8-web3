@@ -31,8 +31,8 @@
   </p>
 
   <!-- Cool Divider -->
-  <div align="center" class="divider-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+  <div class="divider-container" align="center">
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
   <!-- GitHub Stats with Floating Effect -->
@@ -65,8 +65,8 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center" class="divider-container">
-    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider"/>
+  <div class="divider-container" align="center">
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
   <!-- Web3 & DApp Development Section -->
@@ -145,8 +145,8 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center" class="divider-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+  <div class="divider-container" align="center">
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
   <!-- Private Projects Section -->
@@ -185,8 +185,8 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center" class="divider-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+  <div class="divider-container" align="center">
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
   <!-- Connect Section -->
@@ -210,8 +210,8 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center" class="divider-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+  <div class="divider-container" align="center">
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
   <!-- Quote Section -->
@@ -225,8 +225,8 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center" class="divider-container">
-    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider"/>
+  <div class="divider-container" align="center">
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
   <!-- Footer -->
@@ -508,17 +508,21 @@
     padding: 10px 0;
     background: rgba(0, 255, 0, 0.02);
     border-radius: 10px;
-    width: 100%;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     overflow: hidden;
+    text-align: center;
+    display: block;
   }
   
   .divider-container img {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    display: block;
-    margin: 0 auto;
+    display: block !important;
+    margin: 0 auto !important;
+    border: none !important;
+    outline: none !important;
   }
 
   /* Footer Container - Enhanced */
