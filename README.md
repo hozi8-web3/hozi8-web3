@@ -1,62 +1,69 @@
 <div align="center">
   
   <!-- Animated Typing Header with Working Animation -->
-  <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+there+%F0%9F%91%8B+I'm+HOZAIFA+ALI;aka+HOZI+%F0%9F%92%BB;Web3+Developer+%7C+Backend+Wizard+%7C+AI+Enthusiast;Discord+Moderator+%26+Bot+Developer+%F0%9F%A4%96;Smart+Contract+Developer+%7C+DApp+Architect;Always+building+cool+private+projects+%F0%9F%9A%80&center=true&size=30&width=700&height=120&color=00ff00&font=bold&vCenter=true&pause=2000&repeat=true" alt="Typing SVG" />
+  <div align="center" class="floating-header">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+there+%F0%9F%91%8B+I'm+HOZAIFA+ALI;aka+HOZI+%F0%9F%92%BB;Web3+Developer+%7C+Backend+Wizard+%7C+AI+Enthusiast;Discord+Moderator+%26+Bot+Developer+%F0%9F%A4%96;Smart+Contract+Developer+%7C+DApp+Architect;Python+Script+Developer+%F0%9F%8D%8D;Always+building+cool+private+projects+%F0%9F%9A%80&center=true&size=30&width=800&height=150&color=00ff00&font=bold&vCenter=true&pause=2000&repeat=true" alt="Typing SVG" />
   </div>
 
-  <!-- Profile Views Counter -->
-  <p align="center">
+  <!-- Profile Views Counter with Floating Effect -->
+  <p align="center" class="floating-element">
     <img src="https://komarev.com/ghpvc/?username=hozi8-web3&style=flat-square&color=00ff00&label=PROFILE+VIEWS" alt="Profile Views" />
   </p>
 
-  <!-- Social Badges -->
-  <p align="center">
+  <!-- Social Badges with Floating Effect -->
+  <p align="center" class="floating-element">
     <a href="https://github.com/hozi8-web3?tab=followers">
       <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/hozi8-web3?color=00ff00&labelColor=1b1b1b&style=for-the-badge&logo=person-add&label=FOLLOWERS&logoColor=white"/>
     </a>
   </p>
 
   <!-- Cool Divider -->
-  <div align="center">
+  <div align="center" class="divider-container">
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
-  <!-- GitHub Stats -->
-  <div align="center">
+  <!-- GitHub Stats with Floating Effect -->
+  <div align="center" class="floating-element">
     <img src="https://github-readme-stats.vercel.app/api?username=hozi8-web3&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00&border_radius=10" alt="GitHub Stats" />
   </div>
 
-  <!-- GitHub Streak Stats -->
-  <div align="center">
+  <!-- GitHub Streak Stats with Floating Effect -->
+  <div align="center" class="floating-element">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=hozi8-web3&theme=radical&hide_border=true&background=0d1117&stroke=00ff00&ring=00ff00&fire=00ff00&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00ff00&sideLabels=00ff00&dates=ffffff" alt="GitHub Streak Stats" />
   </div>
 
-  <!-- GitHub Trophies -->
-  <div align="center">
+  <!-- GitHub Trophies with Floating Effect -->
+  <div align="center" class="floating-element">
     <img src="https://github-profile-trophy.vercel.app/?username=hozi8-web3&theme=radical&no-frame=true&no-bg=false&margin-w=4&margin-h=4&row=1&column=6" alt="GitHub Trophies" />
   </div>
 
   <!-- Contribution Graph with Activity -->
-  <div align="center">
-    <h2 style="color: #00ff00; margin: 20px 0; text-shadow: 0 0 10px #00ff00;">📊 Contribution Activity</h2>
+  <div align="center" class="floating-element">
+    <h2 class="gradient-text">📊 Contribution Activity</h2>
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=hozi8-web3&theme=react-dark&hide_border=true&area=true&color=00ff00&line=00ff00&point=ffffff&area_color=00ff00&area_alpha=0.3" alt="Contribution Graph" />
   </div>
 
-  <!-- Skills Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🛠️ Skills & Technologies</h2>
-  <div align="center">
+  <!-- Skills Section with Rotating Icons -->
+  <h2 class="gradient-text">🛠️ Skills & Technologies</h2>
+  <div align="center" class="skills-container">
+    <div class="skill-icon rotating">🚀</div>
     <img src="https://skillicons.dev/icons?i=js,ts,py,solidity,nodejs,express,mongodb,react,nextjs,github,git,linux,docker&theme=dark&perline=7" alt="Skills" />
+    <div class="skill-icon rotating">⚡</div>
   </div>
 
   <!-- Cool Divider -->
-  <div align="center">
+  <div align="center" class="divider-container">
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
   <!-- Web3 & DApp Development Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🌐 Web3 & DApp Development</h2>
-  <div align="center">
+  <h2 class="gradient-text">🌐 Web3 & DApp Development</h2>
+  <div align="center" class="content-box floating-element">
+    <div class="icon-container">
+      <span class="rotating-icon">🔗</span>
+      <span class="pulsing-icon">⚡</span>
+      <span class="rotating-icon">🚀</span>
+    </div>
     <p>
       <em>Passionate about building the future of decentralized applications and smart contracts! 🚀</em>
     </p>
@@ -75,8 +82,13 @@
   </div>
 
   <!-- Software Engineering Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">⚙️ Software Engineering</h2>
-  <div align="center">
+  <h2 class="gradient-text">⚙️ Software Engineering</h2>
+  <div align="center" class="content-box floating-element">
+    <div class="icon-container">
+      <span class="rotating-icon">💻</span>
+      <span class="pulsing-icon">🔧</span>
+      <span class="rotating-icon">⚡</span>
+    </div>
     <p>
       <em>Building scalable, maintainable, and high-performance software solutions! 💻</em>
     </p>
@@ -94,14 +106,44 @@
     </p>
   </div>
 
+  <!-- Python Script Development Section -->
+  <h2 class="gradient-text">🐍 Python Script Development</h2>
+  <div align="center" class="content-box floating-element">
+    <div class="icon-container">
+      <span class="rotating-icon">🐍</span>
+      <span class="pulsing-icon">🔧</span>
+      <span class="rotating-icon">⚡</span>
+    </div>
+    <p>
+      <em>Creating powerful automation scripts and tools to streamline development workflows! 🔧</em>
+    </p>
+    <p>
+      <strong>Automation Scripts:</strong> Web scraping, data processing, file management, and system automation
+    </p>
+    <p>
+      <strong>Development Tools:</strong> Custom CLI tools, build scripts, deployment automation, and testing frameworks
+    </p>
+    <p>
+      <strong>Data Processing:</strong> Pandas, NumPy, data visualization, and ETL pipeline development
+    </p>
+    <p>
+      <strong>API Integration:</strong> REST API clients, webhook handlers, and third-party service integrations
+    </p>
+  </div>
+
   <!-- Cool Divider -->
-  <div align="center">
+  <div align="center" class="divider-container">
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
   <!-- Private Projects Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🚧 Private Projects</h2>
-  <div align="center">
+  <h2 class="gradient-text">🚧 Private Projects</h2>
+  <div align="center" class="content-box floating-element">
+    <div class="icon-container">
+      <span class="rotating-icon">🔒</span>
+      <span class="pulsing-icon">✨</span>
+      <span class="rotating-icon">🚀</span>
+    </div>
     <p>
       <em>Many of my contributions are in private repositories and don't show publicly, but rest assured - there's always something cool being built behind the scenes! 🔒✨</em>
     </p>
@@ -111,8 +153,13 @@
   </div>
 
   <!-- Discord Experience Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🤖 Discord Experience</h2>
-  <div align="center">
+  <h2 class="gradient-text">🤖 Discord Experience</h2>
+  <div align="center" class="content-box floating-element">
+    <div class="icon-container">
+      <span class="rotating-icon">🤖</span>
+      <span class="pulsing-icon">⚡</span>
+      <span class="rotating-icon">🎮</span>
+    </div>
     <p>
       <em>Experienced Discord moderator and bot developer! I create custom Discord bots with advanced features including:</em>
     </p>
@@ -125,39 +172,39 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center">
+  <div align="center" class="divider-container">
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
   <!-- Connect Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🌐 Connect with Me</h2>
-  <div align="center">
-    <a href="https://linkedin.com/in/hozaifa-ali" target="_blank">
+  <h2 class="gradient-text">🌐 Connect with Me</h2>
+  <div align="center" class="social-links floating-element">
+    <a href="https://linkedin.com/in/hozaifa-ali" target="_blank" class="social-link">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=00ff00" alt="LinkedIn" />
     </a>
-    <a href="https://twitter.com/hozi8_web3" target="_blank">
+    <a href="https://twitter.com/hozaifa095" target="_blank" class="social-link">
       <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&color=00ff00" alt="Twitter" />
     </a>
-    <a href="mailto:hozaifa.ali@example.com">
+    <a href="mailto:hozaifa.ali@example.com" class="social-link">
       <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=00ff00" alt="Email" />
     </a>
-    <a href="https://github.com/hozi8-web3" target="_blank">
+    <a href="https://github.com/hozi8-web3" target="_blank" class="social-link">
       <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&color=00ff00" alt="GitHub" />
     </a>
-    <a href="https://discord.com/users/your-discord-id" target="_blank">
+    <a href="https://discord.com/users/1222455872668827669" target="_blank" class="social-link">
       <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=00ff00" alt="Discord" />
     </a>
   </div>
 
   <!-- Cool Divider -->
-  <div align="center">
+  <div align="center" class="divider-container">
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
   <!-- Quote Section -->
-  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">💡 Quote of the Day</h2>
-  <div align="center">
-    <blockquote style="border-left: 4px solid #00ff00; padding-left: 20px; font-style: italic; color: #ffffff;">
+  <h2 class="gradient-text">💡 Quote of the Day</h2>
+  <div align="center" class="quote-container floating-element">
+    <blockquote class="quote-box">
       <em>"The best way to predict the future is to implement it."</em>
       <br>
       <strong>- David Heinemeier Hansson</strong>
@@ -165,15 +212,204 @@
   </div>
 
   <!-- Cool Divider -->
-  <div align="center">
+  <div align="center" class="divider-container">
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
   <!-- Footer -->
-  <div align="center">
+  <div align="center" class="footer-container floating-element">
     <p>
       <em>Thanks for visiting! Feel free to reach out if you want to collaborate on something awesome! 🚀</em>
     </p>
   </div>
 
 </div>
+
+<!-- Enhanced CSS for Multiple Animations -->
+<style>
+  /* Gradient Animation */
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Floating Animation */
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Rotating Animation */
+  @keyframes rotating {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Pulsing Animation */
+  @keyframes pulsing {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+  }
+
+  /* Bouncing Animation */
+  @keyframes bouncing {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+  }
+
+  /* Glow Animation */
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; }
+    50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; }
+  }
+
+  /* Gradient Text Class */
+  .gradient-text {
+    background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #00ff00);
+    background-size: 300% 300%;
+    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  /* Floating Elements */
+  .floating-element {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  .floating-header {
+    animation: floating 4s ease-in-out infinite;
+  }
+
+  /* Rotating Icons */
+  .rotating {
+    animation: rotating 4s linear infinite;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5em;
+  }
+
+  .rotating-icon {
+    animation: rotating 6s linear infinite;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 2em;
+  }
+
+  /* Pulsing Icons */
+  .pulsing-icon {
+    animation: pulsing 2s ease-in-out infinite;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 2em;
+  }
+
+  /* Content Boxes */
+  .content-box {
+    background: rgba(0, 255, 0, 0.05);
+    border: 2px solid rgba(0, 255, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .content-box:hover {
+    border-color: rgba(0, 255, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    transform: translateY(-5px);
+  }
+
+  /* Icon Container */
+  .icon-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Skills Container */
+  .skills-container {
+    position: relative;
+    padding: 20px;
+  }
+
+  .skill-icon {
+    position: absolute;
+    top: 10px;
+    font-size: 2em;
+  }
+
+  .skill-icon:first-child {
+    left: 20px;
+  }
+
+  .skill-icon:last-child {
+    right: 20px;
+  }
+
+  /* Social Links */
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-link {
+    transition: all 0.3s ease;
+  }
+
+  .social-link:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  /* Quote Box */
+  .quote-box {
+    border-left: 4px solid #00ff00;
+    padding-left: 20px;
+    font-style: italic;
+    color: #ffffff;
+    background: rgba(0, 255, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+  }
+
+  /* Divider Container */
+  .divider-container {
+    margin: 30px 0;
+    animation: floating 2s ease-in-out infinite;
+  }
+
+  /* Footer Container */
+  .footer-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 255, 0, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+  }
+
+  /* Hover Effects */
+  .floating-element:hover {
+    animation-play-state: paused;
+  }
+
+  .rotating-icon:hover {
+    animation-duration: 1s;
+  }
+
+  .pulsing-icon:hover {
+    animation-duration: 0.5s;
+  }
+</style>
