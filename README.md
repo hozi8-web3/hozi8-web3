@@ -234,9 +234,6 @@
     <p class="footer-text">
       <em>Thanks for visiting! Feel free to reach out if you want to collaborate on something awesome! 🚀</em>
     </p>
-    <p class="footer-subtext">
-      <em>May Allah bless your coding journey! ✨</em>
-    </p>
   </div>
 
 </div>
@@ -527,33 +524,41 @@
 
   /* Footer Container - Enhanced */
   .footer-container {
-    margin-top: 30px;
-    padding: 30px;
-    background: linear-gradient(135deg, rgba(0, 255, 0, 0.08), rgba(0, 255, 255, 0.08));
-    border-radius: 20px;
-    border: 2px solid rgba(0, 255, 0, 0.4);
-    box-shadow: 0 0 25px rgba(0, 255, 0, 0.2);
-    backdrop-filter: blur(15px);
+    margin-top: 40px;
+    padding: 35px;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.12), rgba(0, 255, 255, 0.12));
+    border-radius: 25px;
+    border: 3px solid rgba(0, 255, 0, 0.6);
+    box-shadow: 0 0 35px rgba(0, 255, 0, 0.3);
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(0, 255, 0, 0.05), transparent);
+    animation: gradient 4s ease infinite;
+    pointer-events: none;
   }
 
   .footer-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.4em;
+    font-weight: 600;
     color: #ffffff;
-    margin: 0 0 15px 0;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    margin: 0;
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    position: relative;
+    z-index: 1;
   }
 
-  .footer-subtext {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.1em;
-    font-weight: 400;
-    color: #00ff00;
-    margin: 0;
-    opacity: 0.9;
-    text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
-  }
+
 
   /* Hover Effects */
   .floating-element:hover {
