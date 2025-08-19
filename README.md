@@ -7,7 +7,7 @@
 
   <!-- Animated Logo -->
   <div align="center" class="logo-container">
-    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/hozi.svg" alt="HOZI Logo" class="animated-logo" />
+    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/Hozi.svg" alt="HOZI Logo" class="animated-logo" />
   </div>
   
   <!-- Animated Typing Header with Working Animation -->
