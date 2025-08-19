@@ -229,12 +229,7 @@
     <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/divider.svg" alt="divider" style="width: 100%; height: auto; display: block;"/>
   </div>
 
-  <!-- Footer -->
-  <div align="center" class="footer-container floating-element">
-    <p class="footer-text">
-      <em>Thanks for visiting! Feel free to reach out if you want to collaborate on something awesome! 🚀</em>
-    </p>
-  </div>
+
 
 </div>
 
@@ -522,41 +517,7 @@
     outline: none !important;
   }
 
-  /* Footer Container - Enhanced */
-  .footer-container {
-    margin-top: 40px;
-    padding: 35px;
-    background: linear-gradient(135deg, rgba(0, 255, 0, 0.12), rgba(0, 255, 255, 0.12));
-    border-radius: 25px;
-    border: 3px solid rgba(0, 255, 0, 0.6);
-    box-shadow: 0 0 35px rgba(0, 255, 0, 0.3);
-    backdrop-filter: blur(20px);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .footer-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent, rgba(0, 255, 0, 0.05), transparent);
-    animation: gradient 4s ease infinite;
-    pointer-events: none;
-  }
 
-  .footer-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4em;
-    font-weight: 600;
-    color: #ffffff;
-    margin: 0;
-    text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
-    position: relative;
-    z-index: 1;
-  }
 
 
 
