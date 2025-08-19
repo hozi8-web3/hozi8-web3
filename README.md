@@ -1,88 +1,17 @@
 <div align="center">
   
-  <!-- Animated Typing Header with Gradient -->
+  <!-- Animated Typing Header with Working Animation -->
   <div align="center">
-    <h1 style="background: linear-gradient(45deg, #00ff00, #00ffff, #ff00ff, #00ff00); background-size: 300% 300%; animation: gradient 3s ease infinite; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 2.5em; font-weight: bold; margin: 20px 0;">
-      <span id="typing-text"></span>
-    </h1>
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+there+%F0%9F%91%8B+I'm+HOZAIFA+ALI;aka+HOZI+%F0%9F%92%BB;Web3+Developer+%7C+Backend+Wizard+%7C+AI+Enthusiast;Discord+Moderator+%26+Bot+Developer+%F0%9F%A4%96;Smart+Contract+Developer+%7C+DApp+Architect;Always+building+cool+private+projects+%F0%9F%9A%80&center=true&size=30&width=700&height=120&color=00ff00&font=bold&vCenter=true&pause=2000&repeat=true" alt="Typing SVG" />
   </div>
 
-  <!-- CSS for Gradient Animation -->
-  <style>
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    
-    .glow-text {
-      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
-    
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; }
-      to { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00; }
-    }
-    
-    .floating {
-      animation: floating 3s ease-in-out infinite;
-    }
-    
-    @keyframes floating {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-  </style>
-
-  <!-- JavaScript for Typing Animation -->
-  <script>
-    const texts = [
-      "Hi there 👋 I'm HOZAIFA ALI",
-      "aka HOZI 💻",
-      "Web3 Developer | Backend Wizard | AI Enthusiast",
-      "Discord Moderator & Bot Developer 🤖",
-      "Always building cool private projects 🚀"
-    ];
-    
-    let textIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    
-    function typeText() {
-      const currentText = texts[textIndex];
-      
-      if (isDeleting) {
-        document.getElementById('typing-text').textContent = currentText.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        document.getElementById('typing-text').textContent = currentText.substring(0, charIndex + 1);
-        charIndex++;
-      }
-      
-      if (!isDeleting && charIndex === currentText.length) {
-        setTimeout(() => isDeleting = true, 2000);
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        textIndex = (textIndex + 1) % texts.length;
-      }
-      
-      const speed = isDeleting ? 100 : 150;
-      setTimeout(typeText, speed);
-    }
-    
-    // Start typing animation when page loads
-    window.onload = typeText;
-  </script>
-
   <!-- Profile Views Counter -->
-  <p align="center" class="floating">
+  <p align="center">
     <img src="https://komarev.com/ghpvc/?username=hozi8-web3&style=flat-square&color=00ff00&label=PROFILE+VIEWS" alt="Profile Views" />
   </p>
 
   <!-- Social Badges -->
-  <p align="center" class="floating">
+  <p align="center">
     <a href="https://github.com/hozi8-web3?tab=followers">
       <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/hozi8-web3?color=00ff00&labelColor=1b1b1b&style=for-the-badge&logo=person-add&label=FOLLOWERS&logoColor=white"/>
     </a>
@@ -94,29 +23,29 @@
   </div>
 
   <!-- GitHub Stats -->
-  <div align="center" class="floating">
+  <div align="center">
     <img src="https://github-readme-stats.vercel.app/api?username=hozi8-web3&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=00ff00&text_color=ffffff&icon_color=00ff00&border_radius=10" alt="GitHub Stats" />
   </div>
 
   <!-- GitHub Streak Stats -->
-  <div align="center" class="floating">
+  <div align="center">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=hozi8-web3&theme=radical&hide_border=true&background=0d1117&stroke=00ff00&ring=00ff00&fire=00ff00&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00ff00&sideLabels=00ff00&dates=ffffff" alt="GitHub Streak Stats" />
   </div>
 
   <!-- GitHub Trophies -->
-  <div align="center" class="floating">
+  <div align="center">
     <img src="https://github-profile-trophy.vercel.app/?username=hozi8-web3&theme=radical&no-frame=true&no-bg=false&margin-w=4&margin-h=4&row=1&column=6" alt="GitHub Trophies" />
   </div>
 
   <!-- Contribution Graph with Activity -->
-  <div align="center" class="floating">
-    <h2 style="color: #00ff00; margin: 20px 0;">📊 Contribution Activity</h2>
+  <div align="center">
+    <h2 style="color: #00ff00; margin: 20px 0; text-shadow: 0 0 10px #00ff00;">📊 Contribution Activity</h2>
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=hozi8-web3&theme=react-dark&hide_border=true&area=true&color=00ff00&line=00ff00&point=ffffff&area_color=00ff00&area_alpha=0.3" alt="Contribution Graph" />
   </div>
 
   <!-- Skills Section -->
-  <h2 align="center" class="glow-text">🛠️ Skills & Technologies</h2>
-  <div align="center" class="floating">
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🛠️ Skills & Technologies</h2>
+  <div align="center">
     <img src="https://skillicons.dev/icons?i=js,ts,py,solidity,nodejs,express,mongodb,react,nextjs,github,git,linux,docker&theme=dark&perline=7" alt="Skills" />
   </div>
 
@@ -125,9 +54,54 @@
     <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
   </div>
 
+  <!-- Web3 & DApp Development Section -->
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🌐 Web3 & DApp Development</h2>
+  <div align="center">
+    <p>
+      <em>Passionate about building the future of decentralized applications and smart contracts! 🚀</em>
+    </p>
+    <p>
+      <strong>Smart Contract Development:</strong> Solidity, Hardhat, Truffle, OpenZeppelin, and custom contract architectures
+    </p>
+    <p>
+      <strong>DApp Development:</strong> Full-stack decentralized applications with React/Next.js frontends and Web3 integration
+    </p>
+    <p>
+      <strong>Blockchain Technologies:</strong> Ethereum, Polygon, BSC, and cross-chain interoperability solutions
+    </p>
+    <p>
+      <strong>DeFi & NFT Projects:</strong> Custom DeFi protocols, NFT marketplaces, and tokenomics design
+    </p>
+  </div>
+
+  <!-- Software Engineering Section -->
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">⚙️ Software Engineering</h2>
+  <div align="center">
+    <p>
+      <em>Building scalable, maintainable, and high-performance software solutions! 💻</em>
+    </p>
+    <p>
+      <strong>Backend Development:</strong> Node.js, Express, Python, FastAPI, microservices architecture
+    </p>
+    <p>
+      <strong>Database Design:</strong> MongoDB, PostgreSQL, Redis, and database optimization strategies
+    </p>
+    <p>
+      <strong>System Architecture:</strong> RESTful APIs, GraphQL, event-driven systems, and cloud deployment
+    </p>
+    <p>
+      <strong>DevOps & CI/CD:</strong> Docker, Kubernetes, GitHub Actions, and automated deployment pipelines
+    </p>
+  </div>
+
+  <!-- Cool Divider -->
+  <div align="center">
+    <img src="https://github.com/hozi8-web3/hozi8-web3/blob/main/assets/divider.svg" alt="divider" width="100%"/>
+  </div>
+
   <!-- Private Projects Section -->
-  <h2 align="center" class="glow-text">🚧 Private Projects</h2>
-  <div align="center" class="floating">
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🚧 Private Projects</h2>
+  <div align="center">
     <p>
       <em>Many of my contributions are in private repositories and don't show publicly, but rest assured - there's always something cool being built behind the scenes! 🔒✨</em>
     </p>
@@ -137,8 +111,8 @@
   </div>
 
   <!-- Discord Experience Section -->
-  <h2 align="center" class="glow-text">🤖 Discord Experience</h2>
-  <div align="center" class="floating">
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🤖 Discord Experience</h2>
+  <div align="center">
     <p>
       <em>Experienced Discord moderator and bot developer! I create custom Discord bots with advanced features including:</em>
     </p>
@@ -156,8 +130,8 @@
   </div>
 
   <!-- Connect Section -->
-  <h2 align="center" class="glow-text">🌐 Connect with Me</h2>
-  <div align="center" class="floating">
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">🌐 Connect with Me</h2>
+  <div align="center">
     <a href="https://linkedin.com/in/hozaifa-ali" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=00ff00" alt="LinkedIn" />
     </a>
@@ -181,9 +155,9 @@
   </div>
 
   <!-- Quote Section -->
-  <h2 align="center" class="glow-text">💡 Quote of the Day</h2>
-  <div align="center" class="floating">
-    <blockquote style="border-left: 4px solid #00ff00; padding-left: 20px; font-style: italic;">
+  <h2 align="center" style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">💡 Quote of the Day</h2>
+  <div align="center">
+    <blockquote style="border-left: 4px solid #00ff00; padding-left: 20px; font-style: italic; color: #ffffff;">
       <em>"The best way to predict the future is to implement it."</em>
       <br>
       <strong>- David Heinemeier Hansson</strong>
@@ -196,7 +170,7 @@
   </div>
 
   <!-- Footer -->
-  <div align="center" class="floating">
+  <div align="center">
     <p>
       <em>Thanks for visiting! Feel free to reach out if you want to collaborate on something awesome! 🚀</em>
     </p>
