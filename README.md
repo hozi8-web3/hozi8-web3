@@ -2,14 +2,13 @@
   
   <!-- Muslim Greeting -->
   <div align="center" class="greeting-container">
-    <h1 class="greeting-text">Assalamu alaikum wa rahmatullahi wa barakatuh ✨</h1>
+    <h1 class="greeting-text">Assalamu Alaikum </h1>
   </div>
 
   <!-- Animated Logo -->
   <div align="center" class="logo-container">
     <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/main/assets/Hozi.svg" alt="HOZI Logo" class="animated-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
     <div class="logo-placeholder" style="display: none;">
-      <span class="placeholder-text">HOZI</span>
     </div>
   </div>
   
