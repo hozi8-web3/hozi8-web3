@@ -1,49 +1,18 @@
-<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Simple gradient for text -->
-    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#00ff00;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Simple background circle -->
-  <circle cx="60" cy="60" r="55" fill="none" stroke="#00ff00" stroke-width="2" opacity="0.6"/>
-  
-  <!-- HOZI Text - Simple and Clear -->
-  <g>
-    <!-- H letter -->
-    <path d="M20,25 L20,85 M20,55 L35,55 M35,25 L35,85" 
-          stroke="url(#textGradient)" 
-          stroke-width="6" 
-          fill="none"
-          stroke-linecap="round"/>
-    
-    <!-- O letter -->
-    <path d="M45,25 Q45,17 55,17 T65,25 L65,85 Q65,93 55,93 T45,85 Z" 
-          stroke="url(#textGradient)" 
-          stroke-width="6" 
-          fill="none"/>
-    
-    <!-- Z letter -->
-    <path d="M70,25 L90,25 M90,25 L70,85 M70,85 L90,85" 
-          stroke="url(#textGradient)" 
-          stroke-width="6" 
-          fill="none"
-          stroke-linecap="round"/>
-    
-    <!-- I letter -->
-    <path d="M95,25 L95,85" 
-          stroke="url(#textGradient)" 
-          stroke-width="6" 
-          fill="none"
-          stroke-linecap="round"/>
-  </g>
-  
-  <!-- Simple corner dots -->
-  <circle cx="20" cy="20" r="3" fill="#00ff00"/>
-  <circle cx="100" cy="20" r="3" fill="#00ffff"/>
-  <circle cx="20" cy="100" r="3" fill="#ff00ff"/>
-  <circle cx="100" cy="100" r="3" fill="#ffff00"/>
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#111" />
+
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-size="80" font-family="Arial Black, sans-serif"
+        fill="none" stroke="#00FFFF" stroke-width="2"
+        stroke-dasharray="600" stroke-dashoffset="600">
+    <animate attributeName="stroke-dashoffset" from="600" to="0" dur="2s" fill="freeze" />
+    HOZI
+  </text>
+
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-size="80" font-family="Arial Black, sans-serif"
+        fill="#00FFFF" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2s" dur="1s" fill="freeze" />
+    HOZI
+  </text>
 </svg>
