@@ -1,7 +1,6 @@
 <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
-  <!-- No background rect = transparent background -->
+  <!-- No background = transparent -->
 
-  <!-- Outline Stroke Animation -->
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
         font-size="80" font-family="Arial Black, sans-serif"
         fill="none" stroke="#00FFFF" stroke-width="2"
@@ -10,7 +9,6 @@
     HOZI
   </text>
 
-  <!-- Solid Fill Fade-In -->
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
         font-size="80" font-family="Arial Black, sans-serif"
         fill="#00FFFF" opacity="0">
