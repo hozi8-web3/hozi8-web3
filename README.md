@@ -7,23 +7,10 @@
 
   <!-- Animated Logo -->
   <div align="center" class="logo-container">
-  <svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
-    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-          font-size="80" font-family="Arial Black, sans-serif"
-          fill="none" stroke="#00FFFF" stroke-width="2"
-          stroke-dasharray="600" stroke-dashoffset="600">
-      <animate attributeName="stroke-dashoffset" from="600" to="0" dur="2s" fill="freeze" />
-      HOZI
-    </text>
-
-    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
-          font-size="80" font-family="Arial Black, sans-serif"
-          fill="#00FFFF" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="2s" dur="1s" fill="freeze" />
-      HOZI
-    </text>
-  </svg>
-</div>
+    <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/refs/heads/main/assets/Hozi.svg" alt="HOZI Logo" class="animated-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+    <div class="logo-placeholder" style="display: none;">
+    </div>
+  </div>
 
   
   <!-- Animated Typing Header with Working Animation -->
