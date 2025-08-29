@@ -7,7 +7,7 @@
 
   <!-- Animated Logo -->
   <div align="center" class="logo-container">
-  <img src="https://hozi8-web3.github.io/hozi8-web3/assets/Hozi.svg"
+  <img src="https://raw.githubusercontent.com/hozi8-web3/hozi8-web3/refs/heads/main/assets/Hozi.svg"
        alt="HOZI Logo" class="animated-logo"
        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
   <div class="logo-placeholder" style="display: none;"></div>
